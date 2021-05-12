@@ -7,7 +7,12 @@ $(document).ready(function(){
 	$('.js-open-nav').on('click', function () {
 		$('.js-nav').toggleClass('is-open');
 		$(this).toggleClass('is-active');
-	})
+		if ($(this).hasClass('is-active')) {
+			$('body').css('overflow', 'hidden');
+		} else {
+			$('body').css('overflow', 'auto');
+		}
+	});
 
 	// $('input[type=tel]')
 	// 	.inputmask("8 (999) 999 99 99");

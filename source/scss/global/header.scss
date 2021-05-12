@@ -1,6 +1,9 @@
 .header {
-    position: relative;
+    position: sticky;
+    top: 0;
+    left: 0;
     @extend %dfsb;
+    width: 100%;
     height: 56px;
     padding: 0 0 0 15px;
     background-color: $black;
@@ -44,9 +47,8 @@
         color: $white;
 
         &:hover {
-            color: $white;
+            color: $active-color; // не по макету
             opacity: 0.85;
-
             transition: color .3s ease-in-out;
         }
     }
@@ -87,5 +89,4 @@
             background-color: $active-color;
         }
     }
-
 }

@@ -1,0 +1,23 @@
+.advantage {
+    padding: 60px 0 9px;
+    text-align: center;
+
+    &__title {
+        margin: 0 0 20px;
+
+        h1 {
+            font-family: $headings-font-family;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__content {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+    }
+}

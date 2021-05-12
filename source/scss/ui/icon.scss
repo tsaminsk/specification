@@ -1,11 +1,28 @@
 .icon {
+    transition: color .3s ease-in-out;
 
     &--socials {
         color: #808080;
-        transition: color .3s ease-in-out;
 
         &:hover {
             color: $active-color;
+        }
+    }
+
+    &--banner {
+        color: $white;
+
+        > use .icon-wrapper {
+            fill: rgba($active-color, 0);
+            transition: fill .3s ease-in-out;
+        }
+
+        &:hover {
+            color: rgba($active-color, 0.25);
+
+            use .icon-wrapper {
+                fill: rgba($active-color, 0.25);
+            }
         }
     }
 }

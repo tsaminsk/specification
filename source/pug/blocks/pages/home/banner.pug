@@ -1,8 +1,10 @@
 section.banner
     .container
-
-        h1 Hello, world!
-
+        .banner__cards
+            each card in bannerContent
+                +bannerCard(card)
+        .banner__button
+            .btn.btn--submit КУПИТЬ
         //- include ../../test-block
 
         //- a(href='#helloModal' data-toggle="modal") Ссылка

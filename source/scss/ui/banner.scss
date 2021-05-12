@@ -1,0 +1,49 @@
+.banner {
+    padding: 13px 0 30px;
+
+    // .container {
+
+    // }
+
+    &__card {
+        margin: 0 0 50px;
+        text-align: center;
+    }
+
+    &__card-icon {
+        margin: 0 0 30px;
+    }
+
+    &__card-title {
+        margin: 0 0 10px;
+
+        h3 {
+            font-family: $headings-font-family;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 1px;
+            color: $active-color;
+
+            span {
+                color: $white;
+            }
+        }
+    }
+
+    &__card-content {
+        text-align: left;
+
+        p {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.3px;
+            color: #E1E1E1;
+        }
+    }
+
+    &__button {
+        text-align: center;
+    }
+}

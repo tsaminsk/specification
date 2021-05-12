@@ -1,12 +1,5 @@
 include ../_mixins/_list
 
-mixin headerNav(navs, socials)
-    nav.header__nav.js-nav
-        .header__nav-links
-            each item in navs
-                a(href=item.link ).header__nav-link= item.name
-        .header__nav-socials
-            each item in socials
-                a(href=item.url ).header__nav-soc
-                    svg(width="48" height="48").icon.icon--socials
-                        use(xlink:href=`img/icons/icons.svg#${item.icon}`)
+include ../_mixins/_headerNav
+
+include ../_mixins/_bannerCard
