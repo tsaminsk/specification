@@ -8,5 +8,5 @@ mixin headerNav(navs, socials)
         .header__nav-socials
             each item in socials
                 a(href=item.url ).header__nav-soc
-                    svg(width="48" height="48")
+                    svg(width="48" height="48").icon.icon--socials
                         use(xlink:href=`img/icons/icons.svg#${item.icon}`)
