@@ -23,8 +23,8 @@
 $white:                                    #ffffff;
 $black:                                    #000000;
 
-$body-bg:                                  $white;
-$body-color:                               $black;
+$body-bg:                                  $black;
+$body-color:                               $white;
 $link-color:                               $black;
 $link-decoration:                          underline;
 $link-hover-color:                         $black;
@@ -48,8 +48,8 @@ $container-max-widths: (
 ) !default;
 
 //Typography
-$font-family-base:                         'Montserrat',Arial, sans-serif;
-$font-family-secondary:                    $font-family-base;
+$font-family-base:              		   'Roboto', sans-serif;
+$font-family-secondary:                    'Play', sans-serif;
 $headings-font-family:                     $font-family-secondary;
 $btn-font-family:                          $font-family-secondary;
 $headings-font-weight:                     700;

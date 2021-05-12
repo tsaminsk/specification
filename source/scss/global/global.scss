@@ -1,5 +1,17 @@
 // глобальные стили кроме normalize
 
+:root {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: $font-family-base;
+	background: url(img/bg_mobile.jpg) center center no-repeat;
+	background-image: url(img/bg_mobile.webp);
+	background-size: contain;
+}
+
 .container {
 	@include make-container();
 	@include make-container-max-widths();
