@@ -1,0 +1,83 @@
+.header {
+    position: relative;
+    @extend %dfsb;
+    height: 56px;
+    padding: 0 0 0 15px;
+    background-color: $black;
+
+    &__logo {
+        margin: 0 10px 0 0;
+    }
+
+    &__nav {
+        position: absolute;
+        z-index: 2;
+        top: 100%;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: calc(100vh - 56px);
+        padding: 0 0 132px;
+        background-color: black;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+
+        &.is-open {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    &__nav-links {
+        padding: 1px 0 0;
+    }
+
+    &__nav-link {
+        display: block;
+        font-size: 16px;
+        margin: 28px 0;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $white;
+    }
+
+    &__nav-socials {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 132px;
+        padding: 41px 0 0;
+        text-align: center;
+    }
+
+    &__nav-soc {
+        margin: 0 4px;
+    }
+
+    &__burger {
+        @extend %dfc;
+        flex-direction: column;
+        width: 56px;
+        height: 56px;
+        transition: background-color 0.3s ease-in-out;
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            width: 25px;
+            height: 2px;
+            margin: 2px 0;
+            border-radius: 2px;
+            background-color: $white;
+        }
+
+        &.is-active {
+            background-color: $active-color;
+        }
+    }
+
+}

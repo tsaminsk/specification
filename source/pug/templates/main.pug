@@ -11,7 +11,7 @@ html(lang="ru")
 		link(rel='shortcut icon' type='image/x-icon' href='favicon.ico')
 		//- add '?@@timestamp' postfix to assets files (styles, scripts, images...) for fix browser caching problems
 		link(rel='stylesheet' href='css/style.min.css?@@timestamp')
-	body
+	body.body
 		.page-wrapper
 			block variables
 				include ../global/_variables
@@ -19,11 +19,11 @@ html(lang="ru")
 			block header
 				include ../global/header
 
-			block main
+			//- block main
 
-			block footer
-				include ../global/footer
+			//- block footer
+			//- 	include ../global/footer
 
-			block modal
+			//- block modal
 
 		script(src='js/script.min.js?@@timestamp')

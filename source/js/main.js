@@ -2,6 +2,13 @@
 
 $(document).ready(function(){
 
+	const nav = $('.js-nav');
+
+	$('.js-open-nav').on('click', function () {
+		$('.js-nav').toggleClass('is-open');
+		$(this).toggleClass('is-active');
+	})
+
 	// $('input[type=tel]')
 	// 	.inputmask("8 (999) 999 99 99");
 
