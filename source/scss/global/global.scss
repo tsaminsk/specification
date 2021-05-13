@@ -10,11 +10,19 @@
 	background: $black url(../img/bg_mobile.jpg) center center no-repeat;
 	background-image: url(../img/bg_mobile.webp);
 	background-size: 100% 100%;
+	overflow-x: hidden;
+
+	@media (min-width: 600px) {
+		background: url(../img/bg.jpg);
+		background-image: url(../img/bg.webp);
+		background-size: cover;
+	}
 }
 
 .container {
 	@include make-container();
 	@include make-container-max-widths();
+	max-width: 1190px;
 }
 
 img {

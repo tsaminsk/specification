@@ -4,6 +4,8 @@ $(document).ready(function(){
 
 	const nav = $('.js-nav');
 
+	// const windowWidth = $(window).innerWidth();
+
 	$('.js-open-nav').on('click', function () {
 		$('.js-nav').toggleClass('is-open');
 		$(this).toggleClass('is-active');

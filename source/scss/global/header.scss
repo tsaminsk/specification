@@ -2,14 +2,25 @@
     position: sticky;
     top: 0;
     left: 0;
-    @extend %dfsb;
     width: 100%;
-    height: 56px;
-    padding: 0 0 0 15px;
     background-color: $black;
+
+    .container {
+        @extend %dfsb;
+        height: 56px;
+        padding: 0 0 0 15px;
+    }
 
     &__logo {
         margin: 0 10px 0 0;
+
+        &:hover svg {
+            transform: scale(1.05);
+        }
+
+        svg {
+            transition: transform .3s ease-in-out;
+        }
     }
 
     &__nav {
@@ -87,6 +98,64 @@
 
         &.is-active {
             background-color: $active-color;
+        }
+    }
+
+    @media (min-width: 900px) {
+        position: relative;
+
+        .container {
+            height: 90px;
+            padding: 0 22px 0 53px;
+        }
+
+        &__logo svg {
+            width: 81px;
+            height: 60px;
+        }
+
+        &__nav {
+            position: relative;
+            top: auto;
+            left: auto;
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            width: auto;
+            height: 100%;
+            padding: 0;
+            margin: 0 auto 0 0;
+            opacity: 1;
+        }
+
+        &__nav-links {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 0 0 6px;
+        }
+
+        &__nav-link {
+            margin: 0 24px;
+        }
+
+        &__nav-socials {
+            position: relative;
+            top: auto;
+            left: auto;
+            display: flex;
+            width: auto;
+            height: 100%;
+            padding: 0;
+            margin: 0 0 0 auto;
+        }
+
+        &__nav-soc {
+            margin: 21px 5px 0;
+        }
+
+        &__burger {
+            display: none;
         }
     }
 }
