@@ -1,0 +1,11 @@
+section.banner
+    .container
+        .banner__cards
+            each card in bannerContent
+                +bannerCard(card)
+    .container
+        .banner__button
+            a.btn.btn--submit(href='#helloModal' data-toggle="modal") КУПИТЬ
+        //- include ../../test-block
+
+        //- a(href='#helloModal' data-toggle="modal") Ссылка

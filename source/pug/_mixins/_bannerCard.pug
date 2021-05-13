@@ -1,0 +1,11 @@
+mixin bannerCard(card)
+    .banner__card
+        .banner__card-inner
+            .banner__card-icon
+                svg(width="160" height="90").icon.icon--banner
+                    use(xlink:href=`img/icons/icons.svg#${card.icon}`)
+            .banner__card-title
+                h3= `${card.title.split(' ').splice(0, card.title.split(' ').length - 1).join(' ')} `
+                    span= `${card.title.split(' ').pop().toString()}`
+            .banner__card-content
+                p!= `${card.text.replace('-', '&#8209;')}`

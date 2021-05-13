@@ -1,0 +1,11 @@
+header.header
+	.container
+		a(href="/").header__logo
+			svg(width="45" height="34")
+				use(xlink:href="img/icons/icons.svg#icon-logo")
+		+headerNav(navs, socials)
+		.header__burger.js-open-nav
+			span
+			span
+			span
+

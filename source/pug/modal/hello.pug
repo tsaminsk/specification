@@ -1,0 +1,16 @@
+#helloModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content
+			.modal-header
+				h5#exampleModalLabel.modal-title ПРЕИМУЩЕСТВА G-SYNC
+				button.close(type='button' data-dismiss='modal' aria-label='Close')
+					svg(width="20" height="20")
+						use(xlink:href=`img/icons/icons.svg#icon-close`)
+			form.modal-form(action="#" method="post")
+				.modal-input
+					input(type="text" id="name" name="name" placeholder="Имя")
+				.modal-input
+					input(type="email" id="email" name="email" placeholder="Mail")
+				.modal-footer
+					button.btn.btn--submit(type='submit') Купить
+

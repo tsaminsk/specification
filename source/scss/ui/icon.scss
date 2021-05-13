@@ -1,0 +1,22 @@
+.icon {
+    transition: color .3s ease-in-out;
+    transition: fill .15s ease-in-out;
+
+    &--socials {
+        color: #808080;
+
+        &:hover {
+            color: $active-color;
+        }
+    }
+
+    &--banner {
+        color: $white;
+        fill: rgba($active-color, 0);
+
+        &:hover {
+            color: rgba($active-color, 0.25);
+            fill: rgba($active-color, 0.25);
+        }
+    }
+}
