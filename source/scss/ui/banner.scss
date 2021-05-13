@@ -77,8 +77,7 @@
         }
 
         &__card {
-            width: 255px;
-            margin: 0 30px 0 0;
+            width: 50%;
         }
 
         &__card-title {
@@ -87,6 +86,14 @@
 
         &__button {
             padding: 21px 12px 0 0;
+        }
+    }
+
+    @media (min-width: 1240px) {
+
+        &__card {
+            width: 255px;
+            margin: 0 30px 0 0;
         }
     }
 }

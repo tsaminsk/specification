@@ -55,4 +55,9 @@
             </clipPath>
         </defs>
     </symbol>
+
+    <symbol id="icon-close" viewBox="0 0 20 20">
+        <path d="M18 2L2 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <path d="M2 2L18 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
 </svg>

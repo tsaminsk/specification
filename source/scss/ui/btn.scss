@@ -4,9 +4,14 @@
     padding: 0 44px;
     cursor: pointer;
     text-transform: uppercase;
+    text-decoration: none;
     border: none;
     outline: none;
     color: $white;
+
+    &:hover {
+        color: $white;
+    }
 
     &--submit {
         background-color: $active-color;
@@ -22,7 +27,7 @@
     }
 
     @media (min-width: 600px) {
-        min-width: 190px;
+        width: 190px;
         margin: 0 auto;
     }
 }
